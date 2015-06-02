@@ -9,9 +9,9 @@ At a high level, `Woes` is a way of combining a couple of ideas:
 
 - Defining throwable errors in an `enum` makes for both an easy to use and well documented error API.
 - `NSError` is actually super powerful (even if it's API sucks).
-- `NSError` is even more powerful if you can just throw it into a `UIAlertController` or `UIAlertView`. (Did you know Mac developers get [`NSAlert(error error: NSError) -> NSAlert`](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSAlert_Class/index.html#//apple_ref/occ/clm/NSAlert/alertWithError:)? I want that.)
+- `NSError` is even more powerful if you can just throw it into a `UIAlertController` or `UIAlertView`. (Did you know [`NSAlert(error error: NSError)`](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSAlert_Class/index.html#//apple_ref/occ/clm/NSAlert/alertWithError:) is a thing? I want that.)
 
-_If having an `NSError` populate your alert view instead of a controller feels wrong to you, might I suggest [why should error messages or recovery steps be the API's job instead of the controller's](#why-should-error-messages-or-recovery-steps-be-the-API's-job-instead-of-the-controller's)
+_If having an `NSError` populate your alert view instead of a controller feels wrong to you, might I suggest [why put error messages or recovery steps in the API instead of the controllers](#why-put-error-messages-or-recovery-steps-in-the-API-instead-of-the-controllers)_
 
 ## So what's here?
 
@@ -24,7 +24,7 @@ _If having an `NSError` populate your alert view instead of a controller feels w
 
 _TODO: Sample code_
 
-## Why should error messages or recovery steps be the API's job instead of the controller's
+## Why put error messages or recovery steps in the API instead of the controllers
 
 _TODO: Location manager example_
 
