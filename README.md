@@ -11,7 +11,7 @@ At a high level, `Woes` is a way of combining a couple of ideas:
 - `NSError` is actually super powerful (even if it's API sucks).
 - `NSError` is even more powerful if you can just throw it into a `UIAlertController` or `UIAlertView`. (Did you know [`NSAlert(error error: NSError)`](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSAlert_Class/index.html#//apple_ref/occ/clm/NSAlert/alertWithError:) is a thing? I want that.)
 
-_If having an `NSError` populate your alert view instead of a controller feels wrong to you, might I suggest [why put error messages or recovery steps in the API instead of the controllers](#why-put-error-messages-or-recovery-steps-in-the-API-instead-of-the-controllers)_
+_If having an `NSError` populate your alert view instead of a controller feels wrong to you, might I suggest [reading this](#why-put-error-messages-or-recovery-steps-in-the-api-instead-of-the-controllers)_
 
 ## So what's here?
 
