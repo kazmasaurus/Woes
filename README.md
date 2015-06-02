@@ -11,14 +11,15 @@ At a high level, `Woes` is a way of combining a couple of ideas:
 - `NSError` is actually super powerful (even if it's API sucks).
 - `NSError` is even more powerful if you can just throw it into a `UIAlertController` or `UIAlertView`. (Did you know [`NSAlert(error error: NSError)`](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ApplicationKit/Classes/NSAlert_Class/index.html#//apple_ref/occ/clm/NSAlert/alertWithError:) is a thing? I want that.)
 
-_If having an `NSError` populate your alert view instead of a controller feels wrong to you, might I suggest [reading this](#why-put-error-messages-or-recovery-steps-in-the-api-instead-of-the-controllers)_
+_If having an error object instead of a controller populate your alert view feels wrong, might I suggest [reading this](#why-put-error-messages-or-recovery-steps-in-the-api-instead-of-the-controllers)_
 
 ## So what's here?
 
 - [x] The `Woeful` protocol, which provides the rough shell of what an error `enum` should have.
-- [x] A handful of helpers to make implementing `Woeful` as easy as possible.
+- [ ] A handful of helpers to make implementing `Woeful` as easy as possible.
 - [ ] Convience initializers on `UIAlertController` and `UIAlertView`
-- [x] A good excuse to call your errors `Woeful`
+- [ ] A `RecoveryAttempter` that conforms to the `NSErrorRecoveryAttempting` informal protocol.
+- [x] At excuse to call your errors `Woeful`
 
 ## What does a `Woeful` API look like?
 
