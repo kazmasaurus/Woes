@@ -10,6 +10,7 @@
 		31DFD9411B1D844200F1E8D9 /* Woes.h in Headers */ = {isa = PBXBuildFile; fileRef = 31DFD9401B1D844200F1E8D9 /* Woes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31DFD9471B1D844200F1E8D9 /* Woes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31DFD93B1B1D844200F1E8D9 /* Woes.framework */; };
 		31DFD94E1B1D844200F1E8D9 /* WoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DFD94D1B1D844200F1E8D9 /* WoesTests.swift */; };
+		31DFD9581B1D8D3700F1E8D9 /* Woeful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DFD9571B1D8D3700F1E8D9 /* Woeful.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		31DFD9461B1D844200F1E8D9 /* WoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DFD94C1B1D844200F1E8D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31DFD94D1B1D844200F1E8D9 /* WoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoesTests.swift; sourceTree = "<group>"; };
+		31DFD9571B1D8D3700F1E8D9 /* Woeful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Woeful.swift; path = Woes/Woeful.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		31DFD9311B1D844200F1E8D9 = {
 			isa = PBXGroup;
 			children = (
+				31DFD9571B1D8D3700F1E8D9 /* Woeful.swift */,
 				31DFD93D1B1D844200F1E8D9 /* Woes */,
 				31DFD94A1B1D844200F1E8D9 /* WoesTests */,
 				31DFD93C1B1D844200F1E8D9 /* Products */,
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31DFD9581B1D8D3700F1E8D9 /* Woeful.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 		31DFD9521B1D844200F1E8D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,12 +338,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		31DFD9531B1D844200F1E8D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
